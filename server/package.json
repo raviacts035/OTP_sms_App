@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Backend server for OTP sender app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "keywords": [
+    "node",
+    "twilio",
+    "sms",
+    "otp",
+    "auth"
+  ],
+  "author": "Raveendra Inturi",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.4",
+    "twilio": "^4.13.0"
+  }
+}
