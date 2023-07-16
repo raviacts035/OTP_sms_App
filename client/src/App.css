@@ -10,24 +10,64 @@ body{
     font: bold;
     padding: 20px 0;
     width: fit-content;
+    color: rgb(46, 46, 241);
 }
 .main_cont{
-    box-shadow: 10px blue;
     width: 50vw;
     min-width: 300px;
     margin: 30px auto;
-    /* border: 1px solid lightslategray; */
+    border: 1px solid lightslategray;
     border-radius: 20px;
     padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.option_text{
+    margin: 20px 0;
+    font-size: 13px;
+    color: lightslategray;
 }
 .c_input{
     width: 15px;
+}
+.input_fields{
     padding: 1px 3px;
+    font-size: 16px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-}
 
+}
+.n_input{
+    margin-left: 5px;
+}
 .text_1{
     font-size: 20px;
     margin: 15px 0;
+    color: lightslategray;
+
+}
+.btn_grup{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.btn_grup button{
+    padding: 8px 25px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 0px;
+    background-color: rgb(46, 46, 241);
+    color: #ffff;
+}
+.btn_grup button:hover{
+    scale: 1.2;
+    transition-duration: 500ms;
+}
+.text_2{
+    font-size: 18px;
+    margin: 15px 0;
+    color: lightslategray;
 }

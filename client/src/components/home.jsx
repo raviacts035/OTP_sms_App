@@ -35,27 +35,25 @@ const Home=()=>{
             <div>
                 <p className="top_heading">OTP verification</p>
             </div>
-            <div className="hero_cont">
-                <form>
+                <form className="hero_cont">
                     <p className="text_1">Eneter mobile Number</p>
                     <div className="input_group">
                         <p>+
-                            <input className="c_input" type='text' value={countryCode} onChange={(event)=>{setCountryCode(event.target.value)}} placeholder="country"/>
-                            <input className="n_input" type='text' value={number} onChange={(event)=>{setNumber(event.target.value)}} placeholder="mobile"/>
+                            <input className="c_input input_fields" type='text' value={countryCode} onChange={(event)=>{setCountryCode(event.target.value)}} placeholder="country"/>
+                            <input className="n_input input_fields" type='text' value={number} onChange={(event)=>{setNumber(event.target.value)}} placeholder="mobile"/>
                         </p>
                     </div>
                     <p className="option_text">send OTP through</p>
-                    <div>
+                    <div className="btn_grup">
                         <button onClick={(eve)=>{handleSmsOTP(eve,'sms')}}>SMS</button>
                         <button onClick={(eve)=>{handleSmsOTP(eve,'voice')}}>Call</button>
                     </div>
                     {dialog && 
                     <div>
-                        <p>OTP sent sucessfully to : +{countryCode} {number}</p>
+                        <p className="text_2">OTP sent sucessfully to : +{countryCode} {number}</p>
                     </div>
                     }
                 </form>
-            </div>
         </section>
     )
 }
